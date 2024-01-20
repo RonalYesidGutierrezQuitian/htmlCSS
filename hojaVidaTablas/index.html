@@ -1,82 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja De Vida</title>
     <link rel="stylesheet" href="css/styles.css">
+    <title>HojaRonal</title>
 </head>
-
 <body>
-    <header class="table">
-        <img src="images/spaceVector.png" alt="Imagen de espacio a blanco y negro">
-    </header>
-    <table id="tabla">
-        <tr>
-            <th colspan="3">Armando Bronca Segura</th>
-        </tr>
-        <tr>
-            <td>
-                <div id="informacionPersonal">
-                    <img id="userPic" src="images/userP.png" alt="Foto de usuario">
-                    <h4>Información personal</h4>
-                    <table id="tablaDireccion">
-                        <tr>
-                            <td id="imgMapa">
-                                <div>
-                                    <img src="images/mapa.png" alt="mapa">
-                                </div>
-                            </td>
-                            <td>carrera 104 # 44 04</td>
-                        </tr>
-                    </table>
-                    <ul>
-                        <li>Email: nombre@dominio.com</li>
-                    </ul>
-                    <h5>Enlaces</h5>
-                    <nav>
-                        <ul>
-                            <li>Git: https://linkOfGit.com</li>
-                            <li>linkedIn: https://linkOfLinkedIn.com</li>
-                        </ul>
-                    </nav>
-                </div>
-            </td>
-            <td>
-                <h5>Información academica</h5>
-                <ol>
-                    <li>Basica</li>
-                    <li>Secundaria</li>
-                    <li>pregrado</li>
-                    <li>Postgrado</li>
-                    <li>Diplomado</li>
-                </ol>
-            </td>
-            <td>
-                <h5>Proyectos personales</h5>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h5>Proyectos empresariales</h5>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h5>Contactos</h5>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <table class="tablaPrincipal">
+        <thead class="tituloTabla">
+        </thead>
+        <tbody class="taBody">
+            <tr>
+                <td class="columnaIzq">
+                    <div class="fotoPerfil">
+                        <!-- Foto perfil -->
+                        <img src="images/dogWork.jpg" alt="">
+                    </div>
+                    <div class="informacionGeneral">
+                        <table class="tablaInformacionGeneral">
+                            <tr>
+                                <h3 class="tituloSeccionIzq">Informacion general</h3>
+                            </tr>
+                            <tr>
+                                <td><img src="images/ubicacion.png" alt="logo icono direccion"></td>
+                                <td>
+                                    <span>
+                                        carrera 104 # 44 - 04
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/email.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        usuarioLoco@dominio.com
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/telefono.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        (+57)(7)777777 - 777.7777777
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/web.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Git:
+                                        <li>
+                                            <a href="https://github.com/RonalYesidGutierrezQuitian/htmlCSS.git" target="_blank">www</a>
+                                        </li>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/web.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        LinkedIn:
+                                        <li>
+                                            <a href="https://co.linkedin.com/" target="_blank">www</a>
+                                        </li>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="intereses">
+                        <table class="tablaIntereses">
+                            <tr>
+                                <h3 class="tituloSeccionIzq">Intereses</h3>
+                            </tr>
+                            <tr>
+                                <td><img src="images/lectura.png" alt="logo icono direccion"></td>
+                                <td>
+                                    <span>
+                                        Lectura
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/tecnologia.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Tecnologia
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/juegosLogica.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Juegos de logica
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/ciencia.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Ciencia
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/historia.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Historia
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="columnaCen">
+                    <div class="informacionAcademica">
+                        <table class="tablaInformacionAcademica">
+                            <tr>
+                            <h3 class="tituloSeccionCen">Informacion academica</h3>
+                            </tr>
+                            <tr>
+                            <ul>
+                                <li><b>Primaria:</b>Escuela pedarruna mi primer mordida.</li><br>
+                                <li><b>Bachillerato:</b>Huellas del mañana.</li><br>
+                                <li><b>Tecnica:</b>Servicio Nacional De Adiestramiento Perruno (SENAP).</li><br>
+                                <li><b>Tecnologo:</b>ervicio Nacional De Adiestramiento Perruno (SENAP).</li><br>
+                                <li><b>Profesional:</b>Universidad en ingenierias en caricias</li><br>
+                            </ul>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gifs">
+                        <table class="tablaGifs">
+                            <!-- <tr>
+                                <td class="imagenRemodelacion"><img src="images/remodelando.gif" alt="gif de remodelacion"></td>
+                            </tr> -->
+                        </table>
+                    </div>
+                    <div class="habilidades">
+                        <table class="tablaHabilidades">
+                            <tr>
+                                <h3 class="tituloSeccionCen">Habilidades</h3>
+                            </tr>
+                            <tr>
+                                <td><img src="images/obeyDog.png" alt="logo icono direccion"></td>
+                                <td>
+                                    <span>
+                                        Obediencia siempre que haya liderazgo 
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/houseDog.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Cuidado del hogar
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/antiDogto.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Antidoto contra los dolores del corazon de los humanos
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/comiDag.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Siempre tener hambre
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/dogCertified.png" alt="logo icono carta">
+                                </td>
+                                <td>
+                                    <span>
+                                        Tengo certificados de todo lo anterior mencionado
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="columnaDer">
+                    <div class="proyectos">
+                        <table class="tablaProyectosPer">
+                            <h3 class="tituloSeccionDer">
+                                Proyectos personales
+                            </h3>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Perseguir 300 ardillas antes de los 30
+                                        </li>
+                                        <li>
+                                            Sacar a mi amo a pasear minimo 2 veces al día
+                                        </li>
+                                        <li>
+                                            Aprender a comer basura sin ser descubierto
+                                        </li>
+                                        <li>
+                                            He destruido mas zapatos que todos mis conocidos
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="tablaProyectosPro">
+                            <h3 class="tituloSeccionDer">
+                                Proyectos profesionales
+                            </h3>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Lograr que mi equipo de trabajo no se pelee por las pelotas de tenis</li>
+                                            <li>Influenciar a mi compañero Lucas para que no se muerda las patas</li>
+                                            <li>Que con mi aporte a la compañia en la que trabajo nos destaquemos a nivel global</li>
+                                            <li>Dominar a los gatos</li>
+                                            <li>Dormir mas durante mi jornada laboral</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                        </table>
+                        <div class="gifs">
+                            <table class="tablaGifs">
+                                <h3 class="tituloSeccionDer">
+                                    Contactame o si no....(No hagas hover aqui)
+                                </h3>
+                                <tr>
+                                    <td><img src="images/masTeValeContactarme.gif" alt="gif de remodelacion"></td>
+                                </tr>
+                            </table>
+                        </div>
 </body>
-
 </html>

@@ -1,73 +1,200 @@
-header {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body {
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Evita que el contenido desborde la pantalla */
+    overflow: hidden;
 }
 
-img {
-    width: 99%;
-    transition: 0.5s;
-    object-fit: cover;
-    border-radius: 20%;
-    margin: auto
+.tablaPrincipal {
+    width: 900px;
+    height: 1100px;
+    margin: 0 auto;
 }
 
-#userPic {
-    width: 66%;
+.taBody {
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+     /* Evita que el contenido desborde la tabla */
+    overflow: hidden;
 }
 
-img:hover {
-    transform: scale(1.1);
+
+.fotoPerfil img{
+    border-radius: 50%;
+    height: 230px;
+    width: 250px;
 }
 
-#tabla {
-    height: 100%;
-    width: 70%;
-    border-collapse: collapse;
-    border: 1px solid #080808;
+.fotoPerfil{
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px black;
+}
+
+
+.tablaInformacionGeneral{
+    padding: 5px;
+    text-align: left;
+    height: 250px;
     margin: auto;
-
+    background-color: rgb(33, 58, 114);
 }
 
-div {
-    width: 90%;
+.tablaInformacionGeneral img {
+    height: 30px;
+}
+
+.tablaIntereses{
+    padding: 5px;
+    text-align: left;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(33, 58, 114);
+}
+
+.tablaIntereses img {
+    height: 30px;
+}
+
+.tituloSecciones{
+    color: rgb(73, 196, 17);
+}
+
+.gifs{
+    height: 200px;
+}
+
+.tablaGifs{
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tablaGifs img{
+    height: 150px;
+    border-radius: 0;
+}
+
+.habilidades{
+    height: 250px;
+}
+
+.tablaInformacionAcademica{
+    padding: 5px;
+    text-align: left;
+    margin: auto;
+    background-color: rgb(97, 124, 184);
+}
+
+.informacionAcademica{
+    height: 250px;
+}
+
+.tablaHabilidades{
+    padding: 5px;
+    text-align: left;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(97, 124, 184);
+}
+
+.tablaHabilidades img {
+    height: 30px;
+}
+
+.tablaProyectosPro{
+    height: 250px;
+}
+
+.tablaProyectosPer{
+    height: 250px;
+}
+
+.tablaContacto{
+    height: 10px;
+}
+
+.columnaIzq{
+    color: white;
+    background-color: rgb(33, 58, 114);
+    padding: 20px;
     margin: auto;
 }
 
-th,
-td,
-tr {
-    width: 33%;
-    border: 1px solid #080808;
+.columnaIzq a{
+    color: white;
+}
+
+.columnaCen{
+    color: rgb(33, 58, 114);
+    background-color: rgb(97, 124, 184);
+    padding: 10px;
+    margin: auto;
+}
+
+.columnaDer{
+    padding: 20px;
+    margin: auto;
+    color: rgb(33, 58, 114);
+    background-color: rgb(179, 194, 228);
+}
+
+
+.columna {
+    padding: 20px;
     text-align: center;
-    word-wrap: break-word;
-}
-
-#tablaDireccion {
-    width: 100%;
-}
-/* Quitar bordes no deseados en la tabla direccion */
-#tablaDireccion,
-#tablaDireccion th,
-#tablaDireccion td,
-#tablaDireccion tr {
-    border: none;
-}
-
-#tituloHojaVida {
-    text-align: center;
-}
-
-#informacionPersonal,
-#proyectosAcademicos,
-#informacionAcademica {
-    width: 95%;
+    height: 850px;
     margin: auto;
 }
 
-
-
-#imgMapa {
-    width: 5%;
+.tituloSeccionIzq{
+    color: white;
 }
+.tituloSeccionCen{
+    color: rgb(33, 58, 114);
+}
+
+.tituloSeccionDer{
+    color: rgb(47, 77, 139);
+}
+
+table img{
+    border-radius: 50%;
+}
+
+.tablaGifs img {
+    display: none;
+}
+
+.tituloSeccionDer:hover + .tablaGifs img {
+    display: block;
+}
+
+
+/* Queria agregar mas gif dependiento el titulo pero no alcance  */
+
+
+
+
+
+/* Oculta las imágenes por defecto */
+/* Muestra la imagen de remodelación al hacer hover sobre el titulo */
+/* .imagenRemodelacion, .imagenTituloDer {
+    display: none;
+}
+.tituloSeccionCen:hover + .gifs .tablaGifs .imagenRemodelacion {
+    display: block;
+}
+
